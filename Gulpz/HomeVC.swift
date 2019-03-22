@@ -38,8 +38,8 @@ class HomeVC: UIViewController {
             greeting.text = "Hi \(Setting.name ?? ""), you drank"
     }
     
+
    
-    
     var progress = 0.0
     var displayLink: CADisplayLink!
     

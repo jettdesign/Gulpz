@@ -35,6 +35,11 @@ class UnitVC: UIViewController, UITextFieldDelegate {
         nextButton.addTarget(self, action: #selector(goNext), for: .touchUpInside)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func setupView() {
         formatUnitButton(mlButton, selected: false)
         formatUnitButton(ozButton, selected: false)
