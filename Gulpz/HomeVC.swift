@@ -38,8 +38,8 @@ class HomeVC: UIViewController {
             greeting.text = "Hi \(Setting.name ?? ""), you drank"
     }
     
-
    
+    
     var progress = 0.0
     var displayLink: CADisplayLink!
     
@@ -59,9 +59,6 @@ class HomeVC: UIViewController {
     }
     
 
-    
-    
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         displayLink = CADisplayLink(target: self, selector: #selector(update))

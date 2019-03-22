@@ -258,19 +258,16 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgX-sL-OLf">
-                                <rect key="frame" x="27.5" y="167" width="320" height="333.5"/>
+                                <rect key="frame" x="32" y="167" width="311" height="333.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your unit of measurement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znc-aG-EJr">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="320" id="oyf-yf-5OK"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="88.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e6-zf-F0z">
-                                        <rect key="frame" x="13" y="186.5" width="294" height="80"/>
+                                        <rect key="frame" x="8.5" y="186.5" width="294" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTp-cx-y0g">
                                                 <rect key="frame" x="20" y="0.0" width="80" height="80"/>
@@ -333,7 +330,8 @@
                             <constraint firstItem="5Hg-Ds-fSe" firstAttribute="centerY" secondItem="gq2-rs-PR7" secondAttribute="centerY" multiplier="1.75" id="1Uq-cJ-kOo"/>
                             <constraint firstItem="FgX-sL-OLf" firstAttribute="centerY" secondItem="gq2-rs-PR7" secondAttribute="centerY" id="9fJ-FB-vvq"/>
                             <constraint firstItem="5Hg-Ds-fSe" firstAttribute="centerX" secondItem="gq2-rs-PR7" secondAttribute="centerX" id="NOe-B0-RWG"/>
-                            <constraint firstItem="FgX-sL-OLf" firstAttribute="centerX" secondItem="gq2-rs-PR7" secondAttribute="centerX" id="iz4-Fk-8sq"/>
+                            <constraint firstItem="FgX-sL-OLf" firstAttribute="leading" secondItem="gq2-rs-PR7" secondAttribute="leading" constant="32" id="W50-hc-LwO"/>
+                            <constraint firstAttribute="trailing" secondItem="FgX-sL-OLf" secondAttribute="trailing" constant="32" id="Ylj-p2-smU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="htq-aQ-hbl"/>
                     </view>
@@ -415,7 +413,7 @@
                                     <constraint firstItem="0RZ-8A-ecn" firstAttribute="top" secondItem="j7r-ir-XtH" secondAttribute="top" id="cCN-Zd-zFQ"/>
                                     <constraint firstItem="okd-8S-N9d" firstAttribute="top" secondItem="u08-Uy-LwG" secondAttribute="bottom" constant="32" id="ctc-bn-8vn"/>
                                     <constraint firstAttribute="bottom" secondItem="okd-8S-N9d" secondAttribute="bottom" id="vD3-p0-qjZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="u08-Uy-LwG" secondAttribute="trailing" constant="44" id="vxP-Fl-uOa"/>
+                                    <constraint firstAttribute="trailing" secondItem="u08-Uy-LwG" secondAttribute="trailing" priority="999" constant="44" id="vxP-Fl-uOa"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1094,7 +1092,7 @@
                                     <constraint firstItem="aEt-YU-Vu0" firstAttribute="top" secondItem="aPe-xm-2Pv" secondAttribute="bottom" id="GxR-5n-HSA"/>
                                     <constraint firstAttribute="bottom" secondItem="aEt-YU-Vu0" secondAttribute="bottom" constant="15" id="Lki-zd-ouq"/>
                                     <constraint firstItem="bOW-ik-geS" firstAttribute="leading" secondItem="tvB-3Y-oCd" secondAttribute="leading" id="ODn-L7-uaN"/>
-                                    <constraint firstAttribute="trailing" secondItem="aEt-YU-Vu0" secondAttribute="trailing" constant="32" id="ZPp-34-lNk"/>
+                                    <constraint firstAttribute="trailing" secondItem="aEt-YU-Vu0" secondAttribute="trailing" priority="999" constant="32" id="ZPp-34-lNk"/>
                                     <constraint firstItem="aEt-YU-Vu0" firstAttribute="leading" secondItem="tvB-3Y-oCd" secondAttribute="leading" constant="32" id="Zdh-t1-s1L"/>
                                     <constraint firstItem="aPe-xm-2Pv" firstAttribute="centerY" secondItem="ufd-Vp-aUr" secondAttribute="centerY" id="bjC-kY-tEt"/>
                                     <constraint firstItem="aPe-xm-2Pv" firstAttribute="top" secondItem="tvB-3Y-oCd" secondAttribute="top" constant="20" id="gNW-iM-y86"/>
@@ -1215,7 +1213,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Z7w-El-FcD" secondAttribute="trailing" id="SUN-py-6pI"/>
                                     <constraint firstItem="kXy-r3-7jk" firstAttribute="centerY" secondItem="ibv-Jy-eBF" secondAttribute="centerY" id="biK-up-6g5"/>
                                     <constraint firstAttribute="bottom" secondItem="J6F-UP-W3G" secondAttribute="bottom" constant="15" id="om2-bi-W7w"/>
-                                    <constraint firstAttribute="trailing" secondItem="J6F-UP-W3G" secondAttribute="trailing" constant="32" id="uch-QL-f0E"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6F-UP-W3G" secondAttribute="trailing" priority="999" constant="32" id="uch-QL-f0E"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5LK-kJ-DEA">
