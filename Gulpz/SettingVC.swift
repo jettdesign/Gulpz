@@ -68,7 +68,7 @@ class SettingVC: UITableViewController {
         switch (indexPath.section, indexPath.row) {
         case (0, 0):
             let browser = WebBrowser.create()
-            browser.url = "https://jettdesign.us"
+            browser.url = "https://link.medium.com/Lu7BcFTTeV"
             browser.hidesBottomBarWhenPushed = true
             navigationController?.pushViewController(browser, animated: true)
             break
