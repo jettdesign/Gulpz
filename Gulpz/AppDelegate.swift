@@ -20,7 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         var vc: UIViewController
 
-        reset()
         if Setting.firstRun {
             vc = storyboard.instantiateViewController(withIdentifier: "onboardingNav")
         } else {
@@ -32,12 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         return true
     }
-
-    func reset() {
-        Setting.firstRun = true
-
-    }
-
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
