@@ -51,15 +51,15 @@ class DrinkAmountVC: UIViewController, UITextFieldDelegate {
             descriptionLabel.text = descriptionContent
         }
 
-
+        if Setting.dailyGoal > 0 {
+            nextButton.isEnabled = true
+            goalTextField.text = "\(Setting.dailyGoal.format())"
+        }
 
         if let amount = goalTextField.text, let value = Double(amount) {
             nextButton.isEnabled = value > 0
 
-            if Setting.dailyGoal > 0 {
-                nextButton.isEnabled = true
-                goalTextField.text = "\(Setting.dailyGoal.format())"
-            }
+
 
 
             if isFromSetting {
@@ -70,6 +70,9 @@ class DrinkAmountVC: UIViewController, UITextFieldDelegate {
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if isFromSetting {
+            if let text = goalTextField.text, let value = Double(text) {
+                Setting.dailyGoal = value
+            }
             navigationController?.popViewController(animated: true)
             return false
         } else {

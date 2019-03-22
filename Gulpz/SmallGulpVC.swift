@@ -51,17 +51,13 @@ class SmallGulpVC: UIViewController, UITextFieldDelegate {
             descriptionLabel.text = descriptionContent
         }
 
-
+        if Setting.smallGulp > 0 {
+            nextButton.isEnabled = true
+            smallGulpTextField.text = "\(Setting.smallGulp.format())"
+        }
 
         if let amount = smallGulpTextField.text, let value = Double(amount) {
             nextButton.isEnabled = value > 0
-
-            if Setting.smallGulp > 0 {
-                nextButton.isEnabled = true
-
-                smallGulpTextField.text = "\(Setting.smallGulp.format())"
-            }
-
 
             if isFromSetting {
                 nextButton.setTitle("Save", for: .normal)
